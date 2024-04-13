@@ -409,7 +409,6 @@ body {
 }
 
 
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -425,6 +424,7 @@ body {
     flex-wrap: nowrap;
     margin-top: 50px;
     margin-bottom: 80px;
+    list-style-type: none;
   }
 
   .item {
