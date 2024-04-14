@@ -417,29 +417,34 @@ body {
   .section {
     overflow: hidden;
   }
-
   .items {
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    justify-content: flex-start; /* Adjusted to start from the left */
     flex-wrap: nowrap;
     list-style-type: none;
-  }
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
 
-  .item {
-    height:max-content;
-    margin-right: 20px;
-    line-height: 190px;
+.item {
+    height: max-content;
+    line-height: 190px; /* You can adjust or remove this line if needed */
     text-align: center;
     font-size: 24px;
     color: white;
-  }
+}
 
   .spacer {
     height: 200px;
     text-align: center;
     line-height: 300px;
   }
-
+.header-contact{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
 
   
@@ -588,13 +593,21 @@ body {
         display: none;
 
     }
+    .header-contact{
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width:469px) {
     .banner-content {
         display: none;
     }
-
+ 
+    .spacer {
+        height: 100px;
+        text-align: center;
+        line-height: 300px;
+      }
     .carousel-indicators li {
         width: 13px !important;
         height: 13px !important;
