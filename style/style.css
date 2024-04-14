@@ -422,8 +422,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    margin-top: 50px;
-    margin-bottom: 80px;
     list-style-type: none;
   }
 
@@ -437,7 +435,7 @@ body {
   }
 
   .spacer {
-    height: 300px;
+    height: 200px;
     text-align: center;
     line-height: 300px;
   }
